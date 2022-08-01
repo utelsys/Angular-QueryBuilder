@@ -2,6 +2,7 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "../../out-tsc/lib",
+    "declarationMap": true,
     "declaration": true,
     "inlineSources": true,
     "types": [],
@@ -12,7 +13,6 @@
     "removeComments": false,
     "noImplicitAny": false,
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
     "lib": [
       "es5",
       "es6",
@@ -20,14 +20,14 @@
     ]
   },
   "angularCompilerOptions": {
+    "compilationMode": "partial",
     "skipTemplateCodegen": true,
     "strictMetadataEmit": true,
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true,
     "enableResourceInlining": true,
     "debug": false,
-    "skipMetadataEmit": false,
-    "enableIvy": false
+    "skipMetadataEmit": false
   },
   "exclude": [
     "src/test.ts",
